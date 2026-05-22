@@ -7,3 +7,5 @@ django-debug-toolbar
 django-crispy-forms
 pytest
 pytest-django
+django-crispy-forms
+crispy-bootstrap4
