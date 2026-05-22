@@ -15,6 +15,7 @@ from .forms import (
     ManufacturerSearchForm,
 )
 
+
 @login_required
 def index(request):
     """View function for the home page of the site."""
@@ -104,6 +105,7 @@ class CarListView(LoginRequiredMixin, generic.ListView):
         )
         return context
 
+
 class CarDetailView(LoginRequiredMixin, generic.DetailView):
     model = Car
 
@@ -148,7 +150,6 @@ class DriverListView(LoginRequiredMixin, generic.ListView):
             }
         )
         return context
-
 
 
 class DriverDetailView(LoginRequiredMixin, generic.DetailView):
